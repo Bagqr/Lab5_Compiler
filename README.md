@@ -58,11 +58,11 @@
 1. Использование необъявленных идентификаторов:
 ParseFactor для TOKEN_ID вызывает Lookup и выдаёт ошибку, если переменная не найдена
 Пример:
-![[Pasted image 20260506211410.png]]
+<img width="1869" height="685" alt="image" src="https://github.com/user-attachments/assets/8f5e6ebf-899b-4741-a905-38b4e00bedf1" />
 Идентификатор idx не объявлен и отображается как семантическая ошибка 
 2. Совместимость типов:
 Технически в моём языке существует только int, но механизм есть проверка на выход за рамки int
-![[Pasted image 20260507112558.png]]
+<img width="1872" height="857" alt="image" src="https://github.com/user-attachments/assets/64119297-079c-4335-a3f5-a51d6a2b043f" />
 3. Уникальность идентификаторов
 В текущей грамматике (один цикл for на программу, без других объявлений) нет способа создать конфликт уникальности в пределах одной области видимости.
 4. Допустимые значения
@@ -73,7 +73,7 @@ ParseFactor для TOKEN_ID вызывает Lookup и выдаёт оши�
 for i in range (10):  
     print (idx);
 В программе выводится:
-![[Pasted image 20260507112725.png]]
+<img width="685" height="235" alt="image" src="https://github.com/user-attachments/assets/d3eb728d-6909-4945-a02d-4d4cc992f83f" />
 
 ## Формат вывода AST
 
@@ -84,7 +84,7 @@ for i in range (10):
 
 ## AST/CST
 
-![[123 (1).jpg]]
+<img width="1221" height="451" alt="image" src="https://github.com/user-attachments/assets/3b8bd82e-399f-46d3-8359-6c00e7a717ab" />
 
 `ProgramNode` — корневой узел программы
 `ForNode` — узел цикла, атрибут `variable` хранит имя переменной
@@ -95,12 +95,12 @@ for i in range (10):
 
 ## Тестовые примеры:
 
-![[Pasted image 20260519184616.png]]
+<img width="1874" height="874" alt="image" src="https://github.com/user-attachments/assets/03ab5d70-bc84-4213-b3e9-a29b1a3e1bff" />
 Использование необъявленного идентификатора. Спорный момент, было решено оставить.
 
-![[Pasted image 20260519184713.png]]
+<img width="2104" height="860" alt="image" src="https://github.com/user-attachments/assets/b9bb1e8e-89e9-4021-a500-396f827b5008" />
 Выход за допустимые пределы int
 
-![[Pasted image 20260519184759.png]]
+<img width="2111" height="836" alt="image" src="https://github.com/user-attachments/assets/850b5972-ba92-4833-87d3-877af76ed580" />
 Если допустить синтаксическую ошибку, семантический разбор не начинается
-![[Pasted image 20260519184833.png]]
+<img width="888" height="107" alt="image" src="https://github.com/user-attachments/assets/0e5696c5-a603-4b5c-86f8-cfc00ac536a1" />
