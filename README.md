@@ -85,7 +85,7 @@ for i in range (10):
 
 ## AST/CST
 
-<img width="1221" height="451" alt="image" src="https://github.com/user-attachments/assets/3b8bd82e-399f-46d3-8359-6c00e7a717ab" />
+<img width="1692" height="391" alt="145" src="https://github.com/user-attachments/assets/13b49f2f-8925-4e0a-94a9-f2bfc8738fdb" />
 
 `ProgramNode` — корневой узел программы
 `ForNode` — узел цикла, атрибут `variable` хранит имя переменной
